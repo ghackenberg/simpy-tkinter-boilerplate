@@ -1,4 +1,4 @@
-# SimPy and Tkinter Boilerplate
+# SimPy + Tkinter Boilerplate
 
 ![](./images/social_preview.png)
 
