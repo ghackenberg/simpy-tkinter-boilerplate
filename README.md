@@ -1,5 +1,7 @@
 # SimPy and Tkinter Boilerplate
 
+![](./images/social_preview.png)
+
 This boilerplate project demonstrates the use of **Tkinter** for real-time visualization of discrete event simulations with **SimPy**.
 
 ## Examples
@@ -7,10 +9,10 @@ This boilerplate project demonstrates the use of **Tkinter** for real-time visua
 The following code snippet shows the basic structure of the simulation program. The simulation itself is executed in a separate simulation thread, while the GUI uses the main thread.
 
 ```python
+import threading
 import tkinter
 import simpy
 import simpy.rt
-import threading
 
 # define the simulation ticks per second
 ticks_per_second = 30
@@ -39,46 +41,22 @@ window.mainloop()
 
 When executing the simulation program, you should see the following real-time visualization.
 
-![Screenshot](./screenshot.png)
+![Screenshot](./images/screenshot.png)
 
 ## Guides
 
 ### Prepare the development environment
 
-Install the **virtualenv** package globally.
+Download and install the SimPy discrete event simulation library.
 
 ```
-pip install virtualenv
-```
-
-Create a virtual Python environment called **env**.
-
-```
-python -m venv env
-```
-
-Activate the virtual Python environment **env**.
-
-```
-./env/Scripts/activate
-```
-
-Install the dependencies (i.e. SimPy) into the virtual Python environment **env**.
-
-```
-pip install -r requirements.txt
+pip install simpy
 ```
 
 ### Run the simulation program
 
-Activate the virtual Python environment **env**, which we created previously.
+Execute the simulation program with your standard Python interpreter.
 
 ```
-./env/Scripts/activate
-```
-
-Execute the simulation program in this virtual Python environment.
-
-```
-python ./src/main.py
+python ./sources/main.py
 ```
